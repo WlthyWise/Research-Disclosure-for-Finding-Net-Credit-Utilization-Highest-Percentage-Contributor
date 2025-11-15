@@ -70,7 +70,7 @@ The resultant numerical analysis framework was generated to baseline a human wri
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.85\textwidth]{figures/figure-2-l_shifted_delta_distribution_scatterplot.png}
-\caption{Human written (l) Proof-assisted machine generation (r) }
+\caption{ (l) Proof-assisted machine generated code (r) Human written brute-force }
 \end{figure}
 
 \begin{table}[h]
@@ -97,8 +97,8 @@ The resultant numerical analysis framework was generated to baseline a human wri
 
 A core theme of this work is ``context engineering", of algorithms where the structure and content of the prompt provided to the Large Language Models are carefully designed to elicit a specific, structured output. We found that providing declarative context, such as a LaTeX proof fragment, was highly effective in guiding the model. This work makes use of machine assisted proof generation \cite{tao}. The proof based code generation approach is distinct to Self-planning Code Generation with Large Language Models \cite{xue}.
 
-\subsection{Meta Prompts}
-The following are examples of the meta-prompts \cite{meta_prompts_paper} used. The \{LaTeX\_CONTEXT\_HERE\}\ placeholder was replaced with the content of one of the intermediate proof files, when performing Large Language Models based code generation.
+\subsection{Proof Prompts}
+The following are examples of the proof prompts which are meta-prompts \cite{meta_prompts_paper} used. The \{LaTeX\_CONTEXT\_HERE\}\ placeholder was replaced with the content of one of the intermediate proof files, when performing Large Language Models based code generation.
 
 \begin{lstlisting}
 {LaTeX_CONTEXT_HERE}
